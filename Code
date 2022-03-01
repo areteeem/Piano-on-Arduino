@@ -1,0 +1,148 @@
+//entradas e os seus nomes, todos em float
+
+float buzz = 8;
+float buzz1 = 9;
+float buzz2 = 10;
+float buzz3 = 11;
+float buzz4 = 12;
+float buzz5 = 13;
+float buzz6 = 0;
+
+
+
+
+
+float bot7 = 7;
+float bot6 = 6;
+float bot5 = 5;
+float bot4 = 4;
+float bot3 = 3;
+float bot2 = 2;
+float bot1 = 1;
+
+  
+void setup()
+{
+  
+  //entradas e saidas, o buzz é a saida 8, o resto são entradas para os botões
+  
+  
+  
+  pinMode(buzz, OUTPUT);
+  pinMode(buzz1, OUTPUT);
+  pinMode(buzz2, OUTPUT);
+  pinMode(buzz3, OUTPUT);
+  pinMode(buzz4, OUTPUT);
+  pinMode(buzz5, OUTPUT);
+  pinMode(buzz6, OUTPUT);
+  
+  
+  pinMode(7, INPUT);
+  pinMode(6, INPUT);
+  pinMode(5, INPUT);
+  pinMode(4, INPUT);
+  pinMode(3, INPUT);
+  pinMode(2, INPUT);
+  pinMode(1, INPUT);
+  
+  
+  
+}
+
+void loop()
+{
+
+  
+  //Lê a porta digital 7
+
+  
+  if (digitalRead(bot7))
+  {
+    tone(buzz, 1046.502075);
+  }
+  else
+  {
+    noTone(buzz);
+  }
+  
+  
+  
+  
+  
+  
+  if (digitalRead(bot6))
+  {
+    tone(buzz1, 1174.659058);
+  }
+  else
+  {
+    noTone(buzz1);
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  if (digitalRead(bot5))
+  {
+    tone(buzz2, 1318.510254);
+  }
+  else
+  {
+    noTone(buzz2);
+  }
+  
+  
+  
+  
+  if (digitalRead(bot4))
+  {
+    tone(buzz3, 1396.912964);
+  }
+  else
+  {
+    noTone(buzz3);
+  }
+  
+  
+  
+  
+  
+  if (digitalRead(bot3))
+  {
+    tone(buzz4, 1567.981812);
+  }
+  else
+  {
+    noTone(buzz4);
+  }
+  
+  
+  
+  
+  if (digitalRead(bot2))
+  {
+    tone(buzz5, 1760);
+  }
+  else
+  {
+    noTone(buzz5);
+  }
+  
+  
+  
+  if (digitalRead(bot1))
+  {
+    tone(buzz6, 1975.533325);
+  }
+  else
+  {
+    noTone(buzz6);
+  }
+  
+  
+  
+}  
